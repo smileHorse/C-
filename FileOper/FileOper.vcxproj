@@ -79,6 +79,7 @@
     <ClCompile Include="copy3.cpp" />
     <ClCompile Include="copy4.cpp" />
     <ClCompile Include="copy5.cpp" />
+    <ClCompile Include="records.cpp" />
     <ClCompile Include="template.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
