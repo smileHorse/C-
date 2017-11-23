@@ -81,6 +81,7 @@
     <ClCompile Include="copy5.cpp" />
     <ClCompile Include="records.cpp" />
     <ClCompile Include="template.cpp" />
+    <ClCompile Include="view.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
