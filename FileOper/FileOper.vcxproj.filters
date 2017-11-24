@@ -39,8 +39,19 @@
     <ClCompile Include="view.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="str_records.cpp">
+    <ClCompile Include="StructWithString.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="struct_FILE.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="struct_fstream.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="StructWithString.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
