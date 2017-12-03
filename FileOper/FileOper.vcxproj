@@ -80,9 +80,14 @@
     <ClCompile Include="copy4.cpp" />
     <ClCompile Include="copy5.cpp" />
     <ClCompile Include="records.cpp" />
-    <ClCompile Include="str_records.cpp" />
+    <ClCompile Include="StructWithString.cpp" />
+    <ClCompile Include="struct_FILE.cpp" />
+    <ClCompile Include="struct_fstream.cpp" />
     <ClCompile Include="template.cpp" />
     <ClCompile Include="view.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="StructWithString.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

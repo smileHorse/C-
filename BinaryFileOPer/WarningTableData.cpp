@@ -39,9 +39,10 @@ QString CAlarmTableDataImpl::convertIntToQStr( int value )
 // 将QString写入文件
 void CAlarmTableDataImpl::writeQStrToFile(FILE* outf, const QString& str )
 {
-	int len = str.length() + 1;
+	QByteArray byteArray = str.toLocal8Bit();
+	int len = byteArray.size() + 1;
 	fwrite(&len, sizeof(int), 1, outf);
-	fwrite(str.data(), len, 1, outf);
+	fwrite(byteArray.data(), len, 1, outf);
 }
 
 // 从文件中读取QString
@@ -54,13 +55,13 @@ void CAlarmTableDataImpl::readQStrFromFile(FILE* inf, QString& str )
 	{
 		char* tmpCh = new char[len];
 		fread(tmpCh, len, 1, inf);
-		str = tmpCh;
+		str = QString::fromLocal8Bit(QByteArray(ch));
 		delete [] tmpCh;
 	}
 	else
 	{
 		fread(ch, len, 1, inf);
-		str = ch;
+		str = QString::fromLocal8Bit(QByteArray(ch));
 	}
 }
 
