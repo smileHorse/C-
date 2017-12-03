@@ -33,6 +33,6 @@ namespace
 		{
 			Screen[i][strlen(Screen[i]) - 1] = '\0';
 		}
-		Nlines = i;
+		//Nlines = i;
 	}
 }
