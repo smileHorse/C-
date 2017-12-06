@@ -13,6 +13,9 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="date">
+      <UniqueIdentifier>{34224498-22a1-422a-8f10-6f87ba101755}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -36,16 +39,34 @@
     <ClCompile Include="tdate.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="tdstuff.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="date\DateStuff.cpp">
+      <Filter>date</Filter>
+    </ClCompile>
+    <ClCompile Include="date\year.cpp">
+      <Filter>date</Filter>
+    </ClCompile>
+    <ClCompile Include="date\ymonth.cpp">
+      <Filter>date</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="date.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="datefwd.h">
-      <Filter>头文件</Filter>
+    <ClInclude Include="date\datefwd.h">
+      <Filter>date</Filter>
     </ClInclude>
-    <ClInclude Include="DateStuff.h">
-      <Filter>头文件</Filter>
+    <ClInclude Include="date\DateStuff.h">
+      <Filter>date</Filter>
+    </ClInclude>
+    <ClInclude Include="date\year.h">
+      <Filter>date</Filter>
+    </ClInclude>
+    <ClInclude Include="date\ymonth.h">
+      <Filter>date</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
