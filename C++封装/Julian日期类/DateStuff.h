@@ -4,7 +4,7 @@
 
 #include <assert.h>
 #include "datefwd.h"
-#include <exception>
+#include "except.h"
 using std::string;
 
 namespace DateStuff
@@ -25,13 +25,19 @@ namespace DateStuff
 
 	// “Ï≥£¿‡
 	using std::exception;
-	class Date_Exception : exception
+	class Date_Exception : public exception
 	{
 	public:
+		//Date_Exception(int cod, const string& msg = "")
+		//	: exception((s_ErrorStrings[cod - BEGIN] + ":" + msg).c_str())
+		//{
+		//	assert(BEGIN <= cod && cod < END);
+		//}
 		Date_Exception(int cod, const string& msg = "")
-			: exception((s_ErrorStrings[cod] + ":" + msg).c_str())
+			: exception((s_ErrorStrings[cod - BEGIN] + ":" + msg).c_str())
 		{
 			assert(BEGIN <= cod && cod < END);
+			string test = s_ErrorStrings[cod - BEGIN] + ":" + msg;
 		}
 		enum {BEGIN = 200};
 		enum {DATE_ERROR = BEGIN, YEAR_ERROR, MONTH_ERROR, 

@@ -30,7 +30,7 @@ Date* date_interval(Date* d1, Date* d2)
 		// 从前一个月借
 		if (prev_month == 0)
 		{
-			prev_month == 12;
+			prev_month = 12;
 			--year2;
 		}
 		--months;

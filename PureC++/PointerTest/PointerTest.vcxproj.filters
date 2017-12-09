@@ -33,9 +33,6 @@
     <ClCompile Include="tmath.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="date.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="tdate.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
@@ -49,6 +46,18 @@
       <Filter>date</Filter>
     </ClCompile>
     <ClCompile Include="date\ymonth.cpp">
+      <Filter>date</Filter>
+    </ClCompile>
+    <ClCompile Include="date\date.cpp">
+      <Filter>date</Filter>
+    </ClCompile>
+    <ClCompile Include="date_old.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="date\testDate.cpp">
+      <Filter>date</Filter>
+    </ClCompile>
+    <ClCompile Include="date\fulldate.cpp">
       <Filter>date</Filter>
     </ClCompile>
   </ItemGroup>
@@ -66,6 +75,15 @@
       <Filter>date</Filter>
     </ClInclude>
     <ClInclude Include="date\ymonth.h">
+      <Filter>date</Filter>
+    </ClInclude>
+    <ClInclude Include="date\date.h">
+      <Filter>date</Filter>
+    </ClInclude>
+    <ClInclude Include="date\except.h">
+      <Filter>date</Filter>
+    </ClInclude>
+    <ClInclude Include="date\fulldate.h">
       <Filter>date</Filter>
     </ClInclude>
   </ItemGroup>

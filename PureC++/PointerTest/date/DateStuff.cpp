@@ -5,6 +5,8 @@
 
 using std::min;
 
+#include "except.h"
+
 
 namespace DateStuff
 {
@@ -25,7 +27,7 @@ namespace DateStuff
 		assert(isLeap == 0 || isLeap == 1);
 		if (!IsValidMonth(m))
 		{
-			throw Date_Exception(MONTH_ERROR);
+			Throw(Date, MONTH_ERROR);
 		}
 		return DaysInMonth[isLeap][m];
 	}
@@ -36,7 +38,7 @@ namespace DateStuff
 		// m必须在[1, 13]之间
 		if (m < 1 || m > 13)
 		{
-			throw Date_Exception(MONTH_ERROR);
+			Throw(Date, MONTH_ERROR);
 		}
 		return DaysToDate[isLeap][m - 1];
 	}
@@ -78,13 +80,13 @@ namespace DateStuff
 		CheckY(year);
 		if (n < 1 || n > 366)
 		{
-			throw Date_Exception(Date_Exception::DAY_ERROR);
+			Throw(Date, DAY_ERROR);
 		}
 
 		int row = IsLeap(year);
 		if (n > DaysToDate[row][12])
 		{
-			throw Date_Exception(Date_Exception::RANGE_ERROR);
+			Throw(Date, RANGE_ERROR);
 		}
 
 		for (month = 0; month < 13; ++month)
@@ -110,7 +112,7 @@ namespace DateStuff
 		CheckYM(year, month);
 		if (!(1 <= n && n <= 5) || !(MONDAY <= weekDay && weekDay <= SUNDAY))
 		{
-			throw Date_Exception(DAY_ERROR);
+			Throw(Date, DAY_ERROR);
 		}
 
 		// 查找所需的星期中一天第一次出现的地方
@@ -132,7 +134,7 @@ namespace DateStuff
 		JulToGreg(jday, year, month, day);
 		if (month != tempmonth)
 		{
-			throw Date_Exception(Date_Exception::RANGE_ERROR);
+			Throw(Date, RANGE_ERROR);
 		}
 		return day;
 	}
@@ -231,7 +233,7 @@ namespace DateStuff
 	{
 		if (!(1 <= day1 && day1 <= EndOfYear(y) ) || !(1 <= day2 && day2 <= EndOfYear(y)))
 		{
-			throw Date_Exception(DAY_ERROR);
+			Throw(Date, DAY_ERROR);
 		}
 
 		int s = FirstSatOfYear(y);
@@ -257,7 +259,7 @@ namespace DateStuff
 		CheckYMD(y, m, d);
 		if (y > MAX_YEAR - yrs)
 		{
-			throw Date_Exception(Date_Exception::RANGE_ERROR);
+			Throw(Date, RANGE_ERROR);
 		}
 		y += yrs;
 		d = min(d, EndOfMonth(y, m));
@@ -268,7 +270,7 @@ namespace DateStuff
 		CheckYMD(y, m, d);
 		if (y < MIN_YEAR + yrs)
 		{
-			throw Date_Exception(Date_Exception::RANGE_ERROR);
+			Throw(Date, RANGE_ERROR);
 		}
 		y -= yrs;
 		d = min(d, EndOfMonth(y, m));
@@ -310,7 +312,7 @@ namespace DateStuff
 		int extra = int(wdays % 5);
 		if (dayno + extra > FRIDAY)
 		{
-			extra == 2;	// 跳过周末
+			extra = 2;	// 跳过周末
 		}
 		if (extra > 0)
 		{
@@ -438,7 +440,7 @@ namespace DateStuff
 		}
 		if (!IsValidYMonth(y, m))
 		{
-			throw Date_Exception(Date_Exception::RANGE_ERROR);
+			Throw(Date, RANGE_ERROR);
 		}
 	}
 
@@ -449,7 +451,7 @@ namespace DateStuff
 		d = atoi(s.substr(6, 2).c_str());
 		if (!IsValidYMDay(y, m, d))
 		{
-			throw Date_Exception(Date_Exception::DATE_ERROR);
+			Throw(Date, DATE_ERROR);
 		}
 	}
 
@@ -457,7 +459,7 @@ namespace DateStuff
 	{
 		if (!IsValidYMDay(y, m, d))
 		{
-			throw Date_Exception(Date_Exception::DATE_ERROR);
+			Throw(Date, DATE_ERROR);
 		}
 	}
 
@@ -465,7 +467,7 @@ namespace DateStuff
 	{
 		if (!IsValidYMonth(y, m))
 		{
-			throw Date_Exception(Date_Exception::DATE_ERROR);
+			Throw(Date, DATE_ERROR);
 		}
 	}
 
@@ -473,7 +475,7 @@ namespace DateStuff
 	{
 		if (!IsValidYear(y))
 		{
-			throw Date_Exception(Date_Exception::DATE_ERROR);
+			Throw(Date, DATE_ERROR);
 		}
 	}
 

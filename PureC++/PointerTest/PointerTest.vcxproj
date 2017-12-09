@@ -75,17 +75,29 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="arglist.cpp" />
-    <ClCompile Include="date.cpp" />
+    <ClCompile Include="date\fulldate.cpp" />
+    <ClCompile Include="date\testDate.cpp" />
+    <ClCompile Include="date_old.cpp" />
+    <ClCompile Include="date\date.cpp" />
+    <ClCompile Include="date\DateStuff.cpp" />
+    <ClCompile Include="date\year.cpp" />
+    <ClCompile Include="date\ymonth.cpp" />
     <ClCompile Include="getargs.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="tdate.cpp" />
+    <ClCompile Include="tdstuff.cpp" />
     <ClCompile Include="tformat.cpp" />
     <ClCompile Include="tmath.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="date.h" />
-    <ClInclude Include="datefwd.h" />
-    <ClInclude Include="DateStuff.h" />
+    <ClInclude Include="date\date.h" />
+    <ClInclude Include="date\datefwd.h" />
+    <ClInclude Include="date\DateStuff.h" />
+    <ClInclude Include="date\except.h" />
+    <ClInclude Include="date\fulldate.h" />
+    <ClInclude Include="date\year.h" />
+    <ClInclude Include="date\ymonth.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

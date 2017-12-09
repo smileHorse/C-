@@ -2,14 +2,14 @@
 #include <iostream>
 using namespace std;
 
-const char* DayText[] = 
+const char* DayText5[] = 
 {
 	"Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"
 };
 
 using namespace DateStuff;
 
-int main()
+int main5()
 {
 	int year = 1997;
 	int month = 4;
@@ -18,7 +18,7 @@ int main()
 	cout.setf(ios::boolalpha);
 	cout << "Date: " << month << "/" << day << "/" << year << endl;
 	cout << "Leap year? " << IsLeap(year) << endl;
-	cout << "Day of week: " << DayText[DayOfWeek(year, month, day)] << endl;
+	cout << "Day of week: " << DayText5[DayOfWeek(year, month, day)] << endl;
 	cout << "Day of year: " << DayOfYear(year, month, day) << endl;
 	cout << "Days in month: " << EndOfMonth(year, month) << endl;
 	cout << "Days in previous month: " << DaysInPrevMonth(year, month) << endl;
@@ -29,4 +29,6 @@ int main()
 	int year2, month2, day2;
 	JulToGreg(jday + 100, year2, month2, day2);
 	cout << "100 days from now: " << month2 << "/" << day2 << "/" << year2 << endl;
+
+	return 0;
 }
