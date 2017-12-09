@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE database [
+<!ELEMENT database (mytable*)>
+<!ELEMENT mytable (ids, r)>
+<!ELEMENT ids (#PCDATA)>
+<!ELEMENT r (#PCDATA)>
+<!ATTLIST mytable id CDATA #REQUIRED>
+<!ELEMENT array-element ANY>
+<!ELEMENT ref EMPTY>
+<!ATTLIST ref id CDATA #REQUIRED>
+]>
+<database>
+ <mytable id="2097155">
+  <ids>"hello"</ids>
+  <r><rectangle><vertex c0="0" c1="1"/><vertex c0="2" c1="3"/></rectangle></r>
+ </mytable>
+</database>
