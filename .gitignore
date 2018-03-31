@@ -1,0 +1,15 @@
+﻿#忽略所有的生成文件
+*.exe
+*.sdf
+*.ilk
+*.pdb
+*.opensdf
+*.suo
+*.user
+*.ipch
+
+#忽略以下指定目录
+*/ipch
+*/Debug
+*/*/Debug
+*/*/*/Debug
