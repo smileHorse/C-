@@ -11,9 +11,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{F0C11FD8-F876-4F58-BBF9-BF0D5174E371}</ProjectGuid>
+    <ProjectGuid>{2ACEAAD8-3328-459A-AB7F-01E28B533E98}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>MIODevice</RootNamespace>
+    <RootNamespace>date_time</RootNamespace>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -55,6 +55,8 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)..\lib\boost\date_time;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libboost_date_time-vc100-mt-gd-x32-1_66.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -76,12 +78,9 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="MFile.cpp" />
-    <ClCompile Include="MTime.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="MFile.h" />
-    <ClInclude Include="MTime.h" />
+    <ClInclude Include="basic_timer.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
