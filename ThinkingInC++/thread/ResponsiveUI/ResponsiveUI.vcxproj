@@ -11,9 +11,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{9A1E6774-F883-4BB2-8163-AFCA25D73234}</ProjectGuid>
+    <ProjectGuid>{2F16BB55-CDC7-42BD-9CF8-FCCA577CFE9E}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>LiftOff</RootNamespace>
+    <RootNamespace>ResponsiveUI</RootNamespace>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -77,15 +77,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="LiftOff.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="BasicThreads.cpp" />
-    <ClCompile Include="ConcurrentExecutor.cpp" />
-    <ClCompile Include="MoreBasicThreads.cpp" />
-    <ClCompile Include="PoolExecutor.cpp" />
-    <ClCompile Include="SynchronousExecutor.cpp" />
-    <ClCompile Include="ThreadedExecutor.cpp" />
+    <ClCompile Include="ResponsiveUI.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

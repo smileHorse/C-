@@ -15,27 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="LiftOff.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="BasicThreads.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="MoreBasicThreads.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="ThreadedExecutor.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="PoolExecutor.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="ConcurrentExecutor.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="SynchronousExecutor.cpp">
+    <ClCompile Include="YieldingTask.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
