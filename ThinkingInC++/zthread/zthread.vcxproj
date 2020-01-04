@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{C394F5DE-8628-45F3-A444-B460C12B2B2C}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>zthread</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\ZThread-2.3.2-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="..\ZThread-2.3.2-src\src\config.h.in" />
+    <None Include="..\ZThread-2.3.2-src\src\Makefile.am" />
+    <None Include="..\ZThread-2.3.2-src\src\Makefile.in" />
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\ZThread-2.3.2-src\src\AtomicCount.cxx" />
+    <ClCompile Include="..\ZThread-2.3.2-src\src\ConcurrentExecutor.cxx" />
+    <ClCompile Include="..\ZThread-2.3.2-src\src\Condition.cxx" />
+    <ClCompile Include="..\ZThread-2.3.2-src\src\CountingSemaphore.cxx" />
+    <ClCompile Include="..\ZThread-2.3.2-src\src\FastMutex.cxx" />
+    <ClCompile Include="..\ZThread-2.3.2-src\src\FastRecursiveMutex.cxx" />
+    <ClCompile Include="..\ZThread-2.3.2-src\src\Monitor.cxx" />
+    <ClCompile Include="..\ZThread-2.3.2-src\src\Mutex.cxx" />
+    <ClCompile Include="..\ZThread-2.3.2-src\src\PoolExecutor.cxx" />
+    <ClCompile Include="..\ZThread-2.3.2-src\src\PriorityCondition.cxx" />
+    <ClCompile Include="..\ZThread-2.3.2-src\src\PriorityInheritanceMutex.cxx" />
+    <ClCompile Include="..\ZThread-2.3.2-src\src\PriorityMutex.cxx" />
+    <ClCompile Include="..\ZThread-2.3.2-src\src\PrioritySemaphore.cxx" />
+    <ClCompile Include="..\ZThread-2.3.2-src\src\RecursiveMutex.cxx" />
+    <ClCompile Include="..\ZThread-2.3.2-src\src\RecursiveMutexImpl.cxx" />
+    <ClCompile Include="..\ZThread-2.3.2-src\src\Semaphore.cxx" />
+    <ClCompile Include="..\ZThread-2.3.2-src\src\SynchronousExecutor.cxx" />
+    <ClCompile Include="..\ZThread-2.3.2-src\src\Thread.cxx" />
+    <ClCompile Include="..\ZThread-2.3.2-src\src\ThreadedExecutor.cxx" />
+    <ClCompile Include="..\ZThread-2.3.2-src\src\ThreadImpl.cxx" />
+    <ClCompile Include="..\ZThread-2.3.2-src\src\ThreadLocalImpl.cxx" />
+    <ClCompile Include="..\ZThread-2.3.2-src\src\ThreadOps.cxx" />
+    <ClCompile Include="..\ZThread-2.3.2-src\src\ThreadQueue.cxx" />
+    <ClCompile Include="..\ZThread-2.3.2-src\src\Time.cxx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\ZThread-2.3.2-src\src\ConditionImpl.h" />
+    <ClInclude Include="..\ZThread-2.3.2-src\src\config.h" />
+    <ClInclude Include="..\ZThread-2.3.2-src\src\Debug.h" />
+    <ClInclude Include="..\ZThread-2.3.2-src\src\DeferredInterruptionScope.h" />
+    <ClInclude Include="..\ZThread-2.3.2-src\src\FastLock.h" />
+    <ClInclude Include="..\ZThread-2.3.2-src\src\FastRecursiveLock.h" />
+    <ClInclude Include="..\ZThread-2.3.2-src\src\IntrusivePtr.h" />
+    <ClInclude Include="..\ZThread-2.3.2-src\src\Monitor.h" />
+    <ClInclude Include="..\ZThread-2.3.2-src\src\MutexImpl.h" />
+    <ClInclude Include="..\ZThread-2.3.2-src\src\RecursiveMutexImpl.h" />
+    <ClInclude Include="..\ZThread-2.3.2-src\src\Scheduling.h" />
+    <ClInclude Include="..\ZThread-2.3.2-src\src\SemaphoreImpl.h" />
+    <ClInclude Include="..\ZThread-2.3.2-src\src\State.h" />
+    <ClInclude Include="..\ZThread-2.3.2-src\src\Status.h" />
+    <ClInclude Include="..\ZThread-2.3.2-src\src\ThreadImpl.h" />
+    <ClInclude Include="..\ZThread-2.3.2-src\src\ThreadOps.h" />
+    <ClInclude Include="..\ZThread-2.3.2-src\src\ThreadQueue.h" />
+    <ClInclude Include="..\ZThread-2.3.2-src\src\TimeStrategy.h" />
+    <ClInclude Include="..\ZThread-2.3.2-src\src\TSS.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
