@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "stubCalc", "stubCalc\stubCalc.vcxproj", "{5815ADF7-5419-4128-AC2C-E8DB88B56955}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "proxyCalc", "proxyCalc\proxyCalc.vcxproj", "{2A345A7E-5B9B-4BC6-ABD5-78847B308850}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "pureCCalc", "pureCCalc\pureCCalc.vcxproj", "{F49E8B47-6B06-4D5D-8632-1317D33A4A66}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5815ADF7-5419-4128-AC2C-E8DB88B56955}.Debug|Win32.ActiveCfg = Debug|Win32
+		{5815ADF7-5419-4128-AC2C-E8DB88B56955}.Debug|Win32.Build.0 = Debug|Win32
+		{5815ADF7-5419-4128-AC2C-E8DB88B56955}.Release|Win32.ActiveCfg = Release|Win32
+		{5815ADF7-5419-4128-AC2C-E8DB88B56955}.Release|Win32.Build.0 = Release|Win32
+		{2A345A7E-5B9B-4BC6-ABD5-78847B308850}.Debug|Win32.ActiveCfg = Debug|Win32
+		{2A345A7E-5B9B-4BC6-ABD5-78847B308850}.Debug|Win32.Build.0 = Debug|Win32
+		{2A345A7E-5B9B-4BC6-ABD5-78847B308850}.Release|Win32.ActiveCfg = Release|Win32
+		{2A345A7E-5B9B-4BC6-ABD5-78847B308850}.Release|Win32.Build.0 = Release|Win32
+		{F49E8B47-6B06-4D5D-8632-1317D33A4A66}.Debug|Win32.ActiveCfg = Debug|Win32
+		{F49E8B47-6B06-4D5D-8632-1317D33A4A66}.Debug|Win32.Build.0 = Debug|Win32
+		{F49E8B47-6B06-4D5D-8632-1317D33A4A66}.Release|Win32.ActiveCfg = Release|Win32
+		{F49E8B47-6B06-4D5D-8632-1317D33A4A66}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -7,9 +7,13 @@
 *.suo
 *.user
 *.ipch
+*.tlog
 
 #忽略以下指定目录
 */ipch
 */Debug
 */*/Debug
 */*/*/Debug
+*/*/*/*/Debug
+*/*/*/*/*/Debug
+*.db
