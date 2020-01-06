@@ -15,18 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="EvenChecker.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="EvenGenerator.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="MutexEvenGenerator.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="GuardedEvenGenerator.cpp">
+    <ClCompile Include="ThreadLocalVariables.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

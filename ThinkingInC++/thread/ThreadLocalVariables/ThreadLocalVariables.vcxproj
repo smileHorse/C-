@@ -11,9 +11,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{161F0957-FEB6-4711-A313-3862C88E8F2D}</ProjectGuid>
+    <ProjectGuid>{F9EB3241-000B-43D8-937F-0351B08A8F14}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>EvenChecker</RootNamespace>
+    <RootNamespace>ThreadLocalVariables</RootNamespace>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -77,12 +77,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="EvenChecker.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="EvenGenerator.cpp" />
-    <ClCompile Include="GuardedEvenGenerator.cpp" />
-    <ClCompile Include="MutexEvenGenerator.cpp" />
+    <ClCompile Include="ThreadLocalVariables.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

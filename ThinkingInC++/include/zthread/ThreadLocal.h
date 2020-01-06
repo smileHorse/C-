@@ -301,7 +301,7 @@ namespace ZThread {
         
         operator T() { return value; }
         
-        const Value& operator=(const T& v) { value = v; }
+        const Value& operator=(const T& v) { value = v; return *this; }
         
         virtual bool isInheritable() const {
           return InheritableValueT()( ChildValueT() );

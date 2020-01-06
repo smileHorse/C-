@@ -15,6 +15,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ReferenceCounting", "Refere
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "EvenChecker", "EvenChecker\EvenChecker.vcxproj", "{161F0957-FEB6-4711-A313-3862C88E8F2D}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ThreadLocalVariables", "ThreadLocalVariables\ThreadLocalVariables.vcxproj", "{F9EB3241-000B-43D8-937F-0351B08A8F14}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -49,6 +51,10 @@ Global
 		{161F0957-FEB6-4711-A313-3862C88E8F2D}.Debug|Win32.Build.0 = Debug|Win32
 		{161F0957-FEB6-4711-A313-3862C88E8F2D}.Release|Win32.ActiveCfg = Release|Win32
 		{161F0957-FEB6-4711-A313-3862C88E8F2D}.Release|Win32.Build.0 = Release|Win32
+		{F9EB3241-000B-43D8-937F-0351B08A8F14}.Debug|Win32.ActiveCfg = Debug|Win32
+		{F9EB3241-000B-43D8-937F-0351B08A8F14}.Debug|Win32.Build.0 = Debug|Win32
+		{F9EB3241-000B-43D8-937F-0351B08A8F14}.Release|Win32.ActiveCfg = Release|Win32
+		{F9EB3241-000B-43D8-937F-0351B08A8F14}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
