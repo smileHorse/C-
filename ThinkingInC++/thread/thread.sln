@@ -17,6 +17,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "EvenChecker", "EvenChecker\
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ThreadLocalVariables", "ThreadLocalVariables\ThreadLocalVariables.vcxproj", "{F9EB3241-000B-43D8-937F-0351B08A8F14}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OrnamentalGarden", "OrnamentalGarden\OrnamentalGarden.vcxproj", "{7BC9D1F7-74E0-48ED-AD32-E6B7C73372D3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -55,6 +57,10 @@ Global
 		{F9EB3241-000B-43D8-937F-0351B08A8F14}.Debug|Win32.Build.0 = Debug|Win32
 		{F9EB3241-000B-43D8-937F-0351B08A8F14}.Release|Win32.ActiveCfg = Release|Win32
 		{F9EB3241-000B-43D8-937F-0351B08A8F14}.Release|Win32.Build.0 = Release|Win32
+		{7BC9D1F7-74E0-48ED-AD32-E6B7C73372D3}.Debug|Win32.ActiveCfg = Debug|Win32
+		{7BC9D1F7-74E0-48ED-AD32-E6B7C73372D3}.Debug|Win32.Build.0 = Debug|Win32
+		{7BC9D1F7-74E0-48ED-AD32-E6B7C73372D3}.Release|Win32.ActiveCfg = Release|Win32
+		{7BC9D1F7-74E0-48ED-AD32-E6B7C73372D3}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
