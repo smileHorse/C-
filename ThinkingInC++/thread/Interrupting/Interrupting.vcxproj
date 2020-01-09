@@ -11,9 +11,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{F9EB3241-000B-43D8-937F-0351B08A8F14}</ProjectGuid>
+    <ProjectGuid>{D61F1E13-187D-4CE8-A635-E455BEE4C89E}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>ThreadLocalVariables</RootNamespace>
+    <RootNamespace>Interrupting</RootNamespace>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -77,10 +77,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="ThreadLocalVariables.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="Display.h" />
+    <ClCompile Include="Interrupting.cpp" />
+    <ClCompile Include="Interrupting2.cpp" />
+    <ClCompile Include="Interrupting3.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
