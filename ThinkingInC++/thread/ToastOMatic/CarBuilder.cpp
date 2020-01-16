@@ -77,7 +77,7 @@ public:
 		occupied = false;
 		return c;
 	}
-	// Access car while in cardle
+	// Access car while in cradle
 	Car* operator->() { return &c; }
 	// Allow robots to offer services to this cradle
 	void offerEngineBotServices() {
